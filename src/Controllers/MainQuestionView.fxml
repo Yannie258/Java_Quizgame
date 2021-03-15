@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="750.0" style="-fx-background-color: #dbcda5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Model">
+   <children>
+      <Pane layoutX="3.0" layoutY="9.0" prefHeight="79.0" prefWidth="867.0" AnchorPane.bottomAnchor="526.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="9.0">
+         <children>
+            <Label layoutX="27.0" layoutY="14.0" text="Fragen" textFill="#a62930">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <HBox layoutX="14.0" layoutY="50.0" prefHeight="39.0" prefWidth="1000.0">
+               <children>
+                  <Button fx:id="q1" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#q1Action" prefHeight="40.0" prefWidth="70.0" text="1" />
+                  <Button fx:id="q2" layoutX="92.0" layoutY="50.0" mnemonicParsing="false" onAction="#q2Action" prefHeight="40.0" prefWidth="70.0" text="2" />
+                  <Button fx:id="q3" layoutX="170.0" layoutY="50.0" mnemonicParsing="false" onAction="#q3Action" prefHeight="40.0" prefWidth="70.0" text="3" />
+                  <Button fx:id="q4" layoutX="248.0" layoutY="50.0" mnemonicParsing="false" onAction="#q4Action" prefHeight="40.0" prefWidth="70.0" text="4" />
+                  <Button fx:id="q5" layoutX="326.0" layoutY="50.0" mnemonicParsing="false" onAction="#q5Action" prefHeight="40.0" prefWidth="70.0" text="5" />
+                  <Button fx:id="q6" layoutX="404.0" layoutY="50.0" mnemonicParsing="false" onAction="#q6Action" prefHeight="40.0" prefWidth="70.0" text="6" />
+                  <Button fx:id="q7" layoutX="482.0" layoutY="50.0" mnemonicParsing="false" onAction="#q7Action" prefHeight="40.0" prefWidth="70.0" text="7" />
+                  <Button fx:id="q8" layoutX="560.0" layoutY="50.0" mnemonicParsing="false" onAction="#q8Action" prefHeight="40.0" prefWidth="70.0" text="8" />
+                  <Button fx:id="q9" layoutX="638.0" layoutY="50.0" mnemonicParsing="false" onAction="#q9Action" prefHeight="40.0" prefWidth="70.0" text="9" />
+                  <Button fx:id="q10" layoutX="716.0" layoutY="50.0" mnemonicParsing="false" onAction="#q10Action" prefHeight="40.0" prefWidth="70.0" text="10" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="showQuestion" layoutX="21.0" layoutY="199.0" prefHeight="389.0" prefWidth="700.0" style="-fx-background-color: #276f58;" />
+      <HBox fx:id="counter" layoutX="509.0" layoutY="124.0" spacing="5.0" AnchorPane.bottomAnchor="481.0" AnchorPane.leftAnchor="509.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="124.0">
+         <children>
+            <Label fx:id="seconds_Lbl" layoutX="646.0" layoutY="124.0" text=" " textFill="#ff033e">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

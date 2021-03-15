@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.QuizController">
+   <children>
+      <Pane prefHeight="371.0" prefWidth="721.0">
+         <children>
+            <HBox layoutX="40.0" layoutY="41.0" spacing="5.0">
+               <children>
+                  <Text fx:id="qNo" layoutX="40.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fr. 1">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Text>
+                  <Text fx:id="question" fill="#000040" layoutX="85.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="573.720703125">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </HBox>
+            <VBox layoutX="8.0" layoutY="125.0" spacing="10.0">
+               <children>
+                  <RadioButton fx:id="but_A" layoutX="8.0" layoutY="125.0" mnemonicParsing="false" onAction="#groupAction" text="A." textFill="#060606">
+                     <font>
+                        <Font size="22.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="but_B" layoutX="8.0" layoutY="165.0" mnemonicParsing="false" onAction="#groupAction" text="B." textFill="#060606">
+                     <font>
+                        <Font size="22.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="but_C" layoutX="8.0" layoutY="214.0" mnemonicParsing="false" onAction="#groupAction" text="C." textFill="#060606">
+                     <font>
+                        <Font size="22.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="but_D" layoutX="8.0" layoutY="267.0" mnemonicParsing="false" onAction="#groupAction" text="D." textFill="#060606">
+                     <font>
+                        <Font size="22.0" />
+                     </font></RadioButton>
+               </children>
+            </VBox>
+            <HBox layoutX="78.0" layoutY="318.0" prefHeight="44.0" prefWidth="482.0" spacing="5.0">
+               <children>
+                  <Button fx:id="save_but" mnemonicParsing="false" onAction="#sumbitQuiz" prefHeight="44.0" prefWidth="248.0" text="Beenden und Abgeben" textFill="#2f16a9" />
+                  <Button fx:id="next_but" layoutX="378.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="45.0" prefWidth="231.0" text="Speichern und Weiter" textFill="#2f16a9" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

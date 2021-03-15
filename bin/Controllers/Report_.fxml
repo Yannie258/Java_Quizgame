@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="600.0" style="-fx-background-color: #f5c6b1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.View">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="34.0" text="CONGRATULATION" textFill="#d80d35" AnchorPane.bottomAnchor="352.0" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font size="39.0" />
+         </font></Label>
+      <Label layoutX="166.0" layoutY="98.0" text="Ihr Ergebnis ist: " />
+      <Label fx:id="Marks" layoutX="308.0" layoutY="98.0" text="marks" textFill="#d80d35" />
+      <Label fx:id="comment" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="302.0" prefHeight="27.0" prefWidth="573.0" text="Sie haben QuizGame fertig gemacht!" textFill="#5c2cfa" />
+      <HBox layoutX="115.0" layoutY="379.0" spacing="5.0">
+         <children>
+            <Button fx:id="home" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="379.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="39.0" prefWidth="192.0" style="-fx-alignment: #d80d35;" text="Versuchen nochmals" textFill="#d80d35" />
+            <Button layoutX="308.0" layoutY="379.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="39.0" prefWidth="192.0" text="Schliessen" textFill="#d80d35" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="243.0" layoutY="336.0" text="Vielen Dank!" textFill="#5c2cfa" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="208.42697143554688" AnchorPane.topAnchor="138.0">
+         <image>
+            <Image url="@../../Symbols/challege.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
